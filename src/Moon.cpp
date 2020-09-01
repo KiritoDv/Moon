@@ -1,5 +1,4 @@
 #include <iostream>
-#include <data/types.h>
 #include <window/Window.h>
 
 int main(){
