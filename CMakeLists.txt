@@ -15,5 +15,8 @@ add_executable(${PROJECT_NAME} ${SOURCES})
 add_subdirectory(libs/glfw)
 target_link_libraries(${PROJECT_NAME} PRIVATE glfw)
 
+add_subdirectory(libs/AudioMoon)
+target_link_libraries(${PROJECT_NAME} PRIVATE audio_lib)
+
 find_package(OpenGL REQUIRED)
 target_link_libraries(${PROJECT_NAME} PRIVATE OpenGL::GL)
